@@ -1,0 +1,65 @@
+{
+  "name": "typescript-express-skeleton",
+  "version": "1.0.0",
+  "description": "🚀 Production-ready Express.js boilerplate with TypeScript, Redis caching, Sequelize ORM, and pre-configured middleware for building scalable REST APIs",
+  "homepage": "https://github.com/michaelhernandezrala/typescript-express-skeleton#readme",
+  "bugs": {
+    "url": "https://github.com/michaelhernandezrala/typescript-express-skeleton/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelhernandezrala/typescript-express-skeleton.git"
+  },
+  "license": "MIT",
+  "author": "michaelhernandezrala",
+  "type": "module",
+  "main": "server.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "commit": "cz",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@eslint/js": "9.30.1",
+    "@types/compression": "1.8.1",
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.3",
+    "@types/js-yaml": "4.0.9",
+    "@types/swagger-ui-express": "4.1.8",
+    "commitizen": "4.3.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "9.30.1",
+    "globals": "16.3.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.1.2",
+    "prettier": "^3.6.2",
+    "tsconfig-paths": "4.2.0",
+    "tsx": "4.20.3",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.35.0"
+  },
+  "dependencies": {
+    "compression": "1.8.0",
+    "cors": "2.8.5",
+    "dotenv": "16.6.0",
+    "express": "5.1.0",
+    "express-openapi-validator": "5.5.7",
+    "express-rate-limit": "7.5.1",
+    "helmet": "8.1.0",
+    "http-status-codes": "2.3.0",
+    "swagger-ui-express": "5.0.1",
+    "winston": "3.17.0",
+    "winston-console-format": "1.0.8"
+  }
+}

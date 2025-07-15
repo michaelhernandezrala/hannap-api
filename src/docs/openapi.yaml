@@ -1,0 +1,41 @@
+openapi: 3.0.3
+info:
+  title: TypeScript Express Skeleton API
+  description: A robust TypeScript Express.js skeleton with Redis, Sequelize ORM, and essential middleware for rapid API development
+  version: 1.0.0
+  contact:
+    name: API Support
+    url: https://github.com/michaelhernandezrala/typescript-express-skeleton
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: http://localhost:3000/v1
+    description: Development server
+  - url: https://api.yourdomain.com
+    description: Production server
+
+paths:
+  /health:
+    get:
+      tags:
+        - health
+      summary: Health check endpoint
+      description: Returns the current status of the API
+      x-eov-operation-handler: system.controller
+      operationId: getHealth
+      responses:
+        200:
+          description: API is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  statusCode:
+                    type: number
+                    default: 200
+                  message:
+                    type: string
+                    default: OK
