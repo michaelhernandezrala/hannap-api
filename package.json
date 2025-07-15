@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "dev": "tsx watch src/server.ts",
+    "dev": "tsx watch --inspect-brk src/server.ts",
     "start": "node dist/server.js",
     "clean": "rm -rf dist",
     "type-check": "tsc --noEmit",

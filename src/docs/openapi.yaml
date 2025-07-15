@@ -11,7 +11,7 @@ info:
     url: https://opensource.org/licenses/MIT
 
 servers:
-  - url: http://localhost:3000/v1
+  - url: http://localhost:3610/v1
     description: Development server
   - url: https://api.yourdomain.com
     description: Production server
